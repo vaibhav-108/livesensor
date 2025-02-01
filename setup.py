@@ -1,18 +1,29 @@
 from setuptools import setup,find_packages
 from typing import List
 
+hypen_e= '-e .'
+
+def get_requirements(file_path:str)->List[str]:
+    
+    requirement=[]
+    with open(file_path, 'r') as f:
+        requirement=f.readlines()
+        requirement= [file.replace('\n','') for file in requirement]
+        
+    requirement_=[f.remove(hypen_e) for f in requirement if f==hypen_e]
+    print (requirement_)
+    
+    return requirement_
+    
+
+
 
 
 setup(
     name='sensor',
     version='0.0.1',
     packages=find_packages(),
-    install_requires=[
-        'numpy',
-        'pandas',
-        'scikit-learn',
-        'joblib',
-        ],
+    install_requires=get_requirements('requirements.txt'), 
     description='My custom Python package',
     author='vaibhav',
     author_email='vaibhav.b108@gmail.com',
