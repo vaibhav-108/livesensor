@@ -1,0 +1,7 @@
+1. First we upload our data in MongoDB
+2.Then we will perform data ingestion
+3. Then we will validata the data
+4. after that we will transfer the data
+5. Then train our model on that data
+6. Then we will evalute that model
+7. Then we eill push that model

@@ -1,3 +1,5 @@
 pandas
 numpy
 scikit-learn==1.3.2 
+pymango
+python-dotenv==0.21.0
