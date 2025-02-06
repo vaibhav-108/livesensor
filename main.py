@@ -16,7 +16,7 @@ from sensor.config import Env_variable
 #     except Exception as e:
 #         raise SensorException(e,sys)
 
-# url ="mongodb+srv://vaibhavb108:Bmongo108@cluster0.bpcbg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+# url ="mongodb+srv://vaibhavb108:******@cluster0.bpcbg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 # def dump_csvfile_to_mongodb(filepath:str,
 #                             database_name:str,
