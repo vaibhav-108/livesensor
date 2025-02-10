@@ -18,8 +18,12 @@ from uvicorn import run as app_run
 from starlette.responses import RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 
+<<<<<<< HEAD
 app= FastAPI()
 origins =['*']
+=======
+# url ="mongodb+srv://vaibhavb108:******@cluster0.bpcbg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+>>>>>>> 9deefdca0124049e12a5f750e37b013630d76a89
 
 #cross-origin Resource sharing (cors)
 app.add_middleware(
