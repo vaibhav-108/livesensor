@@ -1,0 +1,3 @@
+
+TRAINING_BUCKET_NAME = "mysensor108"
+PREDICTION_BUCKET_NAME = "sensor-datasource89"
