@@ -4,28 +4,28 @@ from typing import List
 hypen_e= '-e .'
 
 
-def get_requirements()->List[str]:
-    """
-    This function will return list of requirements
-    """
-    requirement_list:List[str] = []
+# def get_requirements()->List[str]:
+#     """
+#     This function will return list of requirements
+#     """
+#     requirement_list:List[str] = []
 
-    """
-    Write a code to read requirements.txt file and append each requirements in requirement_list variable.
-    """
-    return requirement_list
+#     """
+#     Write a code to read requirements.txt file and append each requirements in requirement_list variable.
+#     """
+#     return requirement_list
 
-# def get_requirements(file_path:str)->List[str]:
+def get_requirements(file_path:str)->List[str]:
     
-#     requirement=[]
-#     with open(file_path, 'r') as f:
-#         requirement=f.readlines()
-#         requirement= [file.replace('\n','') for file in requirement]
+    requirement=[]
+    with open(file_path, 'r') as f:
+        requirement=f.readlines()
+        requirement= [file.replace('\n','') for file in requirement]
         
-#     requirement_=[f.remove(hypen_e) for f in requirement if f==hypen_e]
-#     print (requirement_)
+    requirement_list=[f for f in requirement if f!=hypen_e]
+    print (requirement_list)
     
-#     return requirement_
+    return requirement_list
     
 
 
